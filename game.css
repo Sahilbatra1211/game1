@@ -1,0 +1,86 @@
+.outer{
+
+    margin:30px;
+    height:600px;
+    width:1400px;
+   background-color: white;
+    border:4px solid black;
+
+}
+
+#player{
+    background-image: url("super.jpg");
+
+    height:70px;
+    width:200px;
+    transform: translate(0px,280px);
+
+    animation-name: slide;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 100;
+    animation-direction: alternate;
+
+
+}
+
+.div1{
+    background-image:url("spider.jpg");
+    height:100px;
+    width:60px;
+    transform: translate(900px,-630px);
+    animation-name: slide2;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1000;
+    animation-direction: alternate-reverse;
+
+
+
+
+
+}
+.innerobstacle{
+    background-image: url("batman.jpg");
+    height:100px;
+    width:70px;
+    transform: translate(500px,-60px);
+    animation-name: slide2;
+    animation-duration: 1.3s;
+    animation-iteration-count: 1000;
+    animation-direction: alternate;
+
+}
+
+
+
+
+@keyframes slide {
+
+    from{
+        margin-left:0;
+    }
+    to{
+        margin-left:1200px;
+    }
+
+}
+@keyframes slide2 {
+
+    from{
+        margin-top:0px;
+    }
+    to{
+        margin-top:490px;
+    }
+
+}
+
+.outer:active #player{
+    animation-play-state: paused;
+
+
+
+
+
+}
+
